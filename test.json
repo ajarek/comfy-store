@@ -1,0 +1,51 @@
+[
+    {  "id":1,
+      "title": "High-Back Bench",
+      "price": 9.99,
+      "company": "Ikea",
+      "src": "https://dl.airtable.com/.attachments/14ac9e946e1a02eb9ce7d632c83f742f/4fd98e64/product-1.jpeg",
+      "desc":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus perferendis ipsam officia nostrum magni mollitia doloremque optio quod harum similique!"
+    },
+    {
+        "id":2,
+        "title": "Leather Sofa",
+        "price": 24.99,
+        "company": "Marcos",
+        "src": "https://dl.airtable.com/.attachments/3245c726ee77d73702ba8c3310639727/f000842b/product-5.jpg",
+        "desc":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus perferendis ipsam officia nostrum magni mollitia doloremque optio quod harum similique!"
+      },
+      {
+        "id":3,
+        "title": "Entertainment Center",
+        "price": 35.99,
+        "company": "Ikea",
+        "src": "https://dl.airtable.com/.attachments/da5e17fd71f50578d525dd5f596e407e/d5e88ac8/product-2.jpg",
+        "desc":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus perferendis ipsam officia nostrum magni mollitia doloremque optio quod harum similique!"
+      },
+      {
+        "id":4,
+        "title": "Sofa With Table",
+        "price": 59.99,
+        "company": "Ikea",
+        "src": "https://media.istockphoto.com/photos/bohemian-living-room-interior-3d-render-picture-id1182454657?b=1&k=20&m=1182454657&s=170667a&w=0&h=Fx0O5rXSnfUjvt-ZdPKYovdq-_Mbkn90DJq1evHPesI=",
+        "desc":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus perferendis ipsam officia nostrum magni mollitia doloremque optio quod harum similique!"
+      },
+      {
+        "id":5,
+        "title": "Armchairs and Lamp",
+        "price": 74.99,
+        "company": "Ikea",
+        "src": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVybml0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+        "desc":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus perferendis ipsam officia nostrum magni mollitia doloremque optio quod harum similique!"
+      },
+      {
+        "id":6,
+        "title": "Leisure Set",
+        "price": 89.99,
+        "company": "Ikea",
+        "src": "https://thumbs.dreamstime.com/b/miejska-d%C5%BCungla-w-modnym-salonie-z-bia%C5%82%C4%85-kanap%C4%85-czarn%C4%85-poduszk%C4%85-i-drewnianym-meblami-na-pustej-%C5%9Bcianie-174228512.jpg",
+        "desc":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus perferendis ipsam officia nostrum magni mollitia doloremque optio quod harum similique!"
+      }
+    
+  ]
+  

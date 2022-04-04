@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #F8FAFC;
+    --black: #000;
+    --orange: #ba5d2c;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kaushan Script, cursive';
+    background: var(--white);
+}
+
+header {
+    width: 100%;
+    height: 26.5rem;
+    background: url(/assets/main-bcg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 6rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+header::before {
+    content: '';
+    width: 100%;
+    height: 26.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    width: 100%;
+    height: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    z-index: 5;
+    position: relative;
+
+}
+
+.nav-links a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-right: 3rem;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-links a:hover {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.nav-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 5;
+}
+
+.cart span {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 1rem;
+    background: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1,
+.desq {
+    font-family: cursive;
+    width: 100%;
+    z-index: 5;
+}
+
+.h1 h1 {
+
+    font-size: 5.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--white);
+    letter-spacing: 1px;
+
+}
+
+.desq h3 {
+    font-size: 2.75rem;
+    font-family: cursive;
+    color: var(--white);
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+header .btn {
+    width: 16rem;
+    height: 3.375rem;
+    border: 1px solid var(--white);
+
+    border-radius: 5px;
+    z-index: 5;
+    margin-top: 2rem;
+}
+
+header .btn a {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 6rem;
+}
+
+main h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    margin: 3rem;
+    font-weight: 400;
+    color: var(--black);
+    letter-spacing: 1px;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+main .grid .card {
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+
+
+}
+
+.grid .card .img {
+    width: 100%;
+    height: 208px;
+    cursor: pointer;
+}
+
+#img1 {
+    background: url('https://dl.airtable.com/.attachments/14ac9e946e1a02eb9ce7d632c83f742f/4fd98e64/product-1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#img2 {
+    background: url('https://dl.airtable.com/.attachments/3245c726ee77d73702ba8c3310639727/f000842b/product-5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#img3 {
+    background: url('https://dl.airtable.com/.attachments/da5e17fd71f50578d525dd5f596e407e/d5e88ac8/product-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title,.price {
+    
+    width: 100%;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+.price{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--black);
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+.all{
+    width:176px ;
+    height: 40px;
+    background: var(--orange);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    color: var(--white);
+    text-decoration: none;
+}

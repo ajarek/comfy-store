@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/products.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/html/products.html">Products</a>
+                <a href="/html/about.html">About</a>
+            </div>
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="/assets/logo-black.svg" alt="logo" />
+                </a>
+            </div>
+            <div class="cart"><i class="fa-solid fa-cart-shopping  fa-2x"></i><span>2</span></div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="h3">
+            <h3>Home / Products</h3>
+        </div>
+        <div class="wrapper">
+            <aside>
+                <div class="search">
+                    <input type="text" placeholder="search..." />
+                </div>
+                <ul>Company
+                    <li>All</li>
+                    <li>Ikea</li>
+                    <li>Marcos</li>
+                </ul>
+                <div class="range">
+                    <p>Price</p>
+                    <input type="range" min="0" max="100" value="80" />
+                    <p class="value">Value : $<span>80</span></p>
+                </div>
+            </aside>
+            <div class="grid">
+                <div class="card">
+                    <div id="img1" class="img"></div>
+                    <div class="title">High-Back Bench</div>
+                    <div class="price">$<span>9.99</span></div>
+                </div>
+                <div class="card">
+                    <div id="img2" class="img"></div>
+                    <div class="title">Leather Sofa</div>
+                    <div class="price">$<span>24.99</span></div>
+                </div>
+                <div class="card">
+                    <div id="img3" class="img"></div>
+                    <div class="title">Entertainment Center</div>
+                    <div class="price">$<span>35.99</span></div>
+                </div>
+
+                <div class="card">
+                    <div id="img4" class="img"></div>
+                    <div class="title">Sofa With Table</div>
+                    <div class="price">$<span>59.99</span></div>
+                </div>
+                <div class="card">
+                    <div id="img5" class="img"></div>
+                    <div class="title">Armchairs and Lamp</div>
+                    <div class="price">$<span>74.99</span></div>
+                </div>
+                <div class="card">
+                    <div id="img6" class="img"></div>
+                    <div class="title">Leisure Set</div>
+                    <div class="price">$<span>89.99</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script type="module" src="/dist/app.js"></script>
+</body>
+
+</html>
