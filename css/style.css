@@ -87,6 +87,7 @@ nav {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 5;
+    cursor: pointer;
 }
 
 .cart span {
@@ -193,27 +194,7 @@ main .grid .card {
     width: 100%;
     height: 208px;
     cursor: pointer;
-}
-
-#img1 {
-    background: url('https://dl.airtable.com/.attachments/14ac9e946e1a02eb9ce7d632c83f742f/4fd98e64/product-1.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#img2 {
-    background: url('https://dl.airtable.com/.attachments/3245c726ee77d73702ba8c3310639727/f000842b/product-5.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#img3 {
-    background: url('https://dl.airtable.com/.attachments/da5e17fd71f50578d525dd5f596e407e/d5e88ac8/product-2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    
 }
 
 .title,.price {
