@@ -60,13 +60,13 @@
              })
              const btnCart = document.getElementById('btn-cart') as HTMLButtonElement
              btnCart.addEventListener('click', (e) => {
-                 e.preventDefault()
+                
                  data.forEach(el => {
                      if (elem.id == `img${el.id}`) {
 
 
 
-                         let item: Item = {
+                         let newData: Item = {
                              id: el.id,
                              title: el.title,
                              price: el.price,
@@ -74,11 +74,17 @@
                              company: el.company,
                              desc: el.desc
                          }
-                         cartArray.push(item)
+                         const localStorageData = localStorage.getItem('data')
+                         let data
+                         if (localStorageData === null) {
+                             data = []
+                         } else {
+                             data = JSON.parse(localStorageData)
+                         }
 
-                         const meter = document.querySelector('#meter') as HTMLSpanElement
-                         let start = Number(meter.innerHTML)
-                         meter.innerHTML = `${start+1}`
+                         data.push(newData)
+                         localStorage.setItem('data', JSON.stringify(data))
+                         location.reload()
                      }
 
                  })

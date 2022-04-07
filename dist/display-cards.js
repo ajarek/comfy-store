@@ -57,10 +57,9 @@ export function displayCards(url, length) {
                 });
                 const btnCart = document.getElementById('btn-cart');
                 btnCart.addEventListener('click', (e) => {
-                    e.preventDefault();
                     data.forEach(el => {
                         if (elem.id == `img${el.id}`) {
-                            let item = {
+                            let newData = {
                                 id: el.id,
                                 title: el.title,
                                 price: el.price,
@@ -68,10 +67,17 @@ export function displayCards(url, length) {
                                 company: el.company,
                                 desc: el.desc
                             };
-                            cartArray.push(item);
-                            const meter = document.querySelector('#meter');
-                            let start = Number(meter.innerHTML);
-                            meter.innerHTML = `${start + 1}`;
+                            const localStorageData = localStorage.getItem('data');
+                            let data;
+                            if (localStorageData === null) {
+                                data = [];
+                            }
+                            else {
+                                data = JSON.parse(localStorageData);
+                            }
+                            data.push(newData);
+                            localStorage.setItem('data', JSON.stringify(data));
+                            location.reload();
                         }
                     });
                 });
