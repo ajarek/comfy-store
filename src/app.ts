@@ -11,3 +11,4 @@ lengthCart()
   
     cartMy.addEventListener('click', openCart) 
     
+    
