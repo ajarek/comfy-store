@@ -7,6 +7,7 @@ export async function displayCards(url, length) {
         if (index < length) {
             const cardElement = document.createElement('div');
             cardElement.classList.add('card');
+            cardElement.setAttribute('data-company', el.company);
             cardElement.innerHTML = `
         <div id="img${el.id}" class="img"  style="background:url('${el.src}'); background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
         <div class="title">${el.title}</div>
@@ -35,6 +36,7 @@ export async function displayCards(url, length) {
                    <h2>${el.title}</h2>
                    <p class="company">${el.company}</p>
                    <p class="price-single">$<span>${el.price}</span></p>
+                   <input type="number" value="1" min="1" max="100" class="quantity">
                    <p class="color">⚫🟤</p>
                    <p>${el.desc}</p>
                    <button id="btn-cart">Add To Cart</button>
@@ -46,13 +48,16 @@ export async function displayCards(url, length) {
                 }
             });
             const btnCart = document.getElementById('btn-cart');
-            btnCart.addEventListener('click', (e) => {
+            btnCart.addEventListener('click', addCart);
+            function addCart() {
+                const quantityValue = document.querySelector('.quantity');
                 data.forEach(el => {
                     if (elem.id == `img${el.id}`) {
                         let newData = {
                             id: el.id,
                             title: el.title,
                             price: el.price,
+                            quantity: Number(quantityValue.value),
                             src: el.src,
                             company: el.company,
                             desc: el.desc
@@ -66,11 +71,12 @@ export async function displayCards(url, length) {
                             data = JSON.parse(localStorageData);
                         }
                         data.push(newData);
-                        localStorage.setItem('data', JSON.stringify(data));
+                        const filtered = Object.values(data.reduce((acc, cur) => Object.assign(acc, { [cur.id]: cur }), {}));
+                        localStorage.setItem('data', JSON.stringify(filtered));
                         location.reload();
                     }
                 });
-            });
+            }
         });
     });
 }

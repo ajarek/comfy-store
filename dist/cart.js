@@ -11,7 +11,7 @@ export function openCart() {
     const str = localStorage.getItem("data");
     if (str) {
         const parsedObj = JSON.parse(str);
-        let all = parsedObj.reduce((acc, item) => acc + item.price, 0);
+        let all = parsedObj.reduce((acc, item) => acc + item.price * item.quantity, 0);
         const cartWrapper = document.createElement('div');
         cartWrapper.classList.add('cart-wrapper');
         cartWrapper.innerHTML = `<div class="close" onclick="document.querySelector('.cart-wrapper').remove()">❌</div><h3>together to pay: <span id="all">${all.toFixed(2)}</span>$</h3>
@@ -21,12 +21,11 @@ export function openCart() {
             ul.classList.add('cart-item');
             ul.innerHTML = `
             <li id="${parsedObj[i].id}" class="list-group-item   ">
-            <img src="${parsedObj[i].src}" alt="image" >
+              <img src="${parsedObj[i].src}" alt="image" >
               <span >${parsedObj[i].title}</span>
-              <span class="price" >${parsedObj[i].price}</span>
-              
-                <button type="button" class=" btn-danger" >🗑️</button>
-              
+              <span class="price">${parsedObj[i].price}$</span>
+              <span class="qua" >${parsedObj[i].quantity} pcs</span>
+              <button type="button" class=" btn-danger" >🗑️</button>    
             </li>`;
             cartWrapper.appendChild(ul);
         }
@@ -35,23 +34,19 @@ export function openCart() {
     const btn = document.querySelectorAll('.btn-danger');
     btn.forEach(el => {
         el.addEventListener('click', () => {
-            const li = document.querySelectorAll('.list-group-item');
-            li.forEach(ele => {
-                let idb = ele.id;
-                const strt = localStorage.getItem("data");
-                if (strt) {
-                    const dataLocalStorage = JSON.parse(strt);
-                    dataLocalStorage.forEach(function (data, index) {
-                        var _a;
-                        if (String(data.id) === idb) {
-                            dataLocalStorage.splice(index, 1);
-                            (_a = el.parentElement) === null || _a === void 0 ? void 0 : _a.remove();
-                            localStorage.setItem('data', JSON.stringify(dataLocalStorage));
-                        }
-                    });
-                }
+            var _a, _b;
+            const id = (_a = el.parentElement) === null || _a === void 0 ? void 0 : _a.id;
+            const strt = localStorage.getItem("data");
+            if (strt) {
+                const dataLocalStorage = JSON.parse(strt);
+                let temp = dataLocalStorage.filter((item) => item.id != id);
+                localStorage.setItem("data", JSON.stringify(temp));
                 lengthCart();
-            });
+                (_b = el.parentElement) === null || _b === void 0 ? void 0 : _b.remove();
+                let all = temp.reduce((acc, item) => acc + item.price * item.quantity, 0);
+                const allDelte = document.querySelector('#all');
+                allDelte.innerText = `${all.toFixed(2)}`;
+            }
         });
     });
 }
