@@ -26,7 +26,7 @@
         "id":4,
         "title": "Sofa With Table",
         "price": 59.99,
-        "company": "Ikea",
+        "company": "Marcos",
         "src": "https://media.istockphoto.com/photos/bohemian-living-room-interior-3d-render-picture-id1182454657?b=1&k=20&m=1182454657&s=170667a&w=0&h=Fx0O5rXSnfUjvt-ZdPKYovdq-_Mbkn90DJq1evHPesI=",
         "desc":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus perferendis ipsam officia nostrum magni mollitia doloremque optio quod harum similique!"
       },
@@ -42,7 +42,7 @@
         "id":6,
         "title": "Leisure Set",
         "price": 89.99,
-        "company": "Ikea",
+        "company": "Marcos",
         "src": "https://thumbs.dreamstime.com/b/miejska-d%C5%BCungla-w-modnym-salonie-z-bia%C5%82%C4%85-kanap%C4%85-czarn%C4%85-poduszk%C4%85-i-drewnianym-meblami-na-pustej-%C5%9Bcianie-174228512.jpg",
         "desc":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus perferendis ipsam officia nostrum magni mollitia doloremque optio quod harum similique!"
       }
