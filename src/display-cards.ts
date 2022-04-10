@@ -18,6 +18,8 @@
              const cardElement = document.createElement('div');
              cardElement.classList.add('card');
              cardElement.setAttribute('data-company', el.company);
+             cardElement.setAttribute('data-price', el.price);
+             cardElement.setAttribute('data-name', el.title);
              cardElement.innerHTML = `
         <div id="img${el.id}" class="img"  style="background:url('${el.src}'); background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
         <div class="title">${el.title}</div>
@@ -34,9 +36,6 @@
              e.preventDefault()
              data.forEach(el => {
                  if (elem.id == `img${el.id}`) {
-
-
-
                      main.innerHTML = ''
                      const container = document.createElement('div');
                      container.innerHTML = ` 
@@ -67,9 +66,6 @@
                     const quantityValue = document.querySelector('.quantity') as HTMLInputElement
                  data.forEach(el => {
                      if (elem.id == `img${el.id}`) {
-
-
-
                          let newData: Item = {
                              id: el.id,
                              title: el.title,
@@ -80,8 +76,7 @@
                              desc: el.desc
                          }
                          const localStorageData = localStorage.getItem('data')
-                         
-                         
+                                             
                          let data
                          if (localStorageData === null) {
                              data = []
@@ -99,14 +94,9 @@
 
                      }
 
-                 })
-                
-                 
+                 })               
              }
          })
      })
-
-
-
  }
  

@@ -8,6 +8,8 @@ export async function displayCards(url, length) {
             const cardElement = document.createElement('div');
             cardElement.classList.add('card');
             cardElement.setAttribute('data-company', el.company);
+            cardElement.setAttribute('data-price', el.price);
+            cardElement.setAttribute('data-name', el.title);
             cardElement.innerHTML = `
         <div id="img${el.id}" class="img"  style="background:url('${el.src}'); background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
         <div class="title">${el.title}</div>

@@ -8,8 +8,8 @@ import {  displayCards } from "./display-cards.js";
  const cartMy= document.querySelector('.cart') as HTMLDivElement
    cartMy.addEventListener('click', openCart) 
 
-  const search = document.querySelectorAll('.list') as NodeListOf<HTMLLIElement>
-  search.forEach(el=>
+  const list = document.querySelectorAll('.list') as NodeListOf<HTMLLIElement>
+  list.forEach(el=>
     el.addEventListener('click',searchItems))
 
     function searchItems(e:any){
@@ -28,4 +28,34 @@ import {  displayCards } from "./display-cards.js";
         }
       }
       })
+    }
+
+    const inputPrice = document.querySelector('.input-price') as HTMLInputElement
+    inputPrice.addEventListener('input',filterPrice)
+
+    function filterPrice(e:any){
+     const priceValue=document.querySelector('#price-value')as HTMLSpanElement
+     priceValue.innerHTML=e.target.value
+      
+        const cards = document.querySelectorAll('.card') as NodeListOf<HTMLElement>
+        cards.forEach(card=>{          
+         if(Number(card.dataset.price) <= Number(e.target.value)){
+            card.style.display='flex'
+         }else{
+            card.style.display='none'
+         }   
+        })
+    }
+    const inputSearch = document.querySelector('.input-search') as HTMLInputElement
+    inputSearch.addEventListener('input',filterSearch)
+
+    function filterSearch(e:any){
+        const cards = document.querySelectorAll('.card') as NodeListOf<HTMLElement>
+        cards.forEach(card=>{          
+          if(card.dataset.name?.toLowerCase().includes(e.target.value.toLowerCase())){
+            card.style.display='flex'
+          }else{
+            card.style.display='none'
+          }
+        })
     }

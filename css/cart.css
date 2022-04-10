@@ -1,6 +1,6 @@
-.cart-wrapper{
+.cart-wrapper {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     width: 35%;
     height: 71%;
@@ -8,28 +8,29 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
     padding: 1rem;
     background: #faead6;
     z-index: 5;
     overflow: auto;
-    
 }
-.cart-wrapper .close{
+
+.cart-wrapper .close {
     position: absolute;
     top: 0.3rem;
     left: 0.3rem;
     width: 2rem;
     height: 2rem;
-    background:var(--black);
+    background: var(--black);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.cart-wrapper .btn-primary{
-   padding: 0.3rem 1rem;
+
+.cart-wrapper .btn-primary {
+    padding: 0.3rem 1rem;
     background: var(--black);
     border: none;
     text-decoration: none;
@@ -40,37 +41,39 @@
     margin-top: .5rem;
     display: block;
 }
-  
-.cart-item{
+
+.cart-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
 }
-.cart-wrapper li{
+
+.cart-wrapper li {
     list-style: none;
     font-size: 1rem;
-    
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.cart-wrapper img{
+
+.cart-wrapper img {
     width: 20%;
     height: 20%;
     object-fit: cover;
     margin-right: 0.5rem;
 }
-.cart-wrapper span{
+
+.cart-wrapper span {
     width: 100%;
 }
-.cart-wrapper .price{
+
+.cart-wrapper .price {
     font-size: 1rem;
-   
 }
-.btn-danger{
-   background-color: transparent;
+
+.btn-danger {
+    background-color: transparent;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -79,13 +82,15 @@
     cursor: pointer;
     transition: 0.3s;
 }
-@media screen and (max-width: 768px){
-    .cart-wrapper{
+
+@media screen and (max-width: 768px) {
+    .cart-wrapper {
         width: 50%;
-    }   
+    }
 }
-@media screen and (max-width: 375px){
-    .cart-wrapper{
+
+@media screen and (max-width: 375px) {
+    .cart-wrapper {
         width: 70%;
-    }   
+    }
 }

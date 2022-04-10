@@ -34,8 +34,6 @@ export function openCart(){
 
   const btn =document.querySelectorAll('.btn-danger') as NodeListOf<HTMLButtonElement>
     btn.forEach(el=>{
-
-      
         el.addEventListener('click',()=>{
             const id = el.parentElement?.id
            const  strt = localStorage.getItem("data")
@@ -50,8 +48,8 @@ export function openCart(){
            allDelte.innerText=`${all.toFixed(2)}`          
            }  
           
-})
-})
+        })
+     })
 }
 
 

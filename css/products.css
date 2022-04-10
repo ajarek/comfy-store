@@ -13,7 +13,7 @@
     --black: #000;
     --orange: #ba5d2c;
     --grey: #e2e8f0;
-    --grey-dark:#64748b;
+    --grey-dark: #64748b;
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 
 header {
     width: 100%;
-    height: 5,625rem;
+    height: 5, 625rem;
     background: var(--white);
     display: flex;
     flex-direction: column;
@@ -36,8 +36,6 @@ header {
     padding: 0 6rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
-
 
 nav {
     width: 100%;
@@ -48,7 +46,6 @@ nav {
     color: var(--black);
     z-index: 5;
     position: relative;
-
 }
 
 .nav-links a {
@@ -105,13 +102,11 @@ nav {
 }
 
 .h1 h1 {
-
     font-size: 5.25rem;
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--white);
     letter-spacing: 1px;
-
 }
 
 .desq h3 {
@@ -126,7 +121,6 @@ header .btn {
     width: 16rem;
     height: 3.375rem;
     border: 1px solid var(--white);
-
     border-radius: 5px;
     z-index: 5;
     margin-top: 2rem;
@@ -154,9 +148,9 @@ main {
     justify-content: flex-start;
     align-items: center;
     padding-bottom: 2rem;
-   
 }
-main .h3{
+
+main .h3 {
     width: 100%;
     height: 7.5rem;
     background: var(--grey);
@@ -174,9 +168,9 @@ main h3 {
     font-weight: 400;
     color: var(--grey-dark);
     letter-spacing: 1px;
-   
 }
-.wrapper{
+
+.wrapper {
     width: 100%;
     height: 100%;
     display: flex;
@@ -184,21 +178,24 @@ main h3 {
     align-items: flex-start;
     padding: 0 2rem 2rem 2rem;
 }
-aside{
-   width: 200px; 
-   height: 17.4rem;
-   display: flex;
-   flex-direction: column;
+
+aside {
+    width: 200px;
+    height: 17.4rem;
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
-aside .search{
-    width: 100%;   
+
+aside .search {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-aside .search input{
+
+aside .search input {
     width: 100%;
     height: 2.4rem;
     background: var(--grey);
@@ -208,13 +205,14 @@ aside .search input{
     border-radius: 5px;
     margin-bottom: 1rem;
     font-size: 1.2rem;
-
 }
-aside .search input::placeholder{
+
+aside .search input::placeholder {
     letter-spacing: 2px;
     font-size: 1.2rem;
 }
-aside ul{
+
+aside ul {
     list-style: none;
     width: 100%;
     height: 8rem;
@@ -225,24 +223,28 @@ aside ul{
     color: var(--grey-dark);
     margin-bottom: 1rem;
 }
-aside ul li{
+
+aside ul li {
     padding: 0 0.3rem;
-    cursor: pointer; 
+    cursor: pointer;
     transition: 0.3s;
 }
-aside ul li:hover{
+
+aside ul li:hover {
     background: var(--orange);
     color: var(--white);
 }
-aside .range{
+
+aside .range {
     width: 100%;
-    height:5rem;
+    height: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     font-size: 1.2rem;
 }
+
 .grid {
     width: 100%;
     display: grid;
@@ -254,10 +256,8 @@ main .grid .card {
     height: 290px;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
-
-
 }
 
 .grid .card .img {
@@ -286,18 +286,21 @@ main .grid .card {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 #img4 {
     background: url('https://media.istockphoto.com/photos/bohemian-living-room-interior-3d-render-picture-id1182454657?b=1&k=20&m=1182454657&s=170667a&w=0&h=Fx0O5rXSnfUjvt-ZdPKYovdq-_Mbkn90DJq1evHPesI=');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 #img5 {
     background: url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVybml0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 #img6 {
     background: url('https://thumbs.dreamstime.com/b/miejska-d%C5%BCungla-w-modnym-salonie-z-bia%C5%82%C4%85-kanap%C4%85-czarn%C4%85-poduszk%C4%85-i-drewnianym-meblami-na-pustej-%C5%9Bcianie-174228512.jpg');
     background-size: cover;
@@ -305,8 +308,8 @@ main .grid .card {
     background-repeat: no-repeat;
 }
 
-.title,.price {
-    
+.title,
+.price {
     width: 100%;
     height: 41px;
     display: flex;
@@ -314,13 +317,14 @@ main .grid .card {
     align-items: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    
 }
-.price{
+
+.price {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--black);
 }
+
 /* about */
 .history {
     width: 100%;
@@ -329,9 +333,10 @@ main .grid .card {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding:0px 12rem 2rem 12rem;   
+    padding: 0px 12rem 2rem 12rem;
 }
-.title-history{
+
+.title-history {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -341,34 +346,38 @@ main .grid .card {
     color: var(--black);
     letter-spacing: 2px;
     margin-bottom: 2rem;
-   
 }
-.lorem{
+
+.lorem {
     font-size: 1.2rem;
     line-height: 2rem;
     color: var(--black);
     opacity: 0.6;
 }
+
 /* single-card */
-.single-product{
+.single-product {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding:0 6rem;
+    padding: 0 6rem;
     margin-bottom: 2rem;
 }
+
 .img-single {
     width: 50%;
     height: 400px;
 }
-.img-single img{
+
+.img-single img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.text-single{
+
+.text-single {
     width: 50%;
     height: 400px;
     display: flex;
@@ -377,29 +386,33 @@ main .grid .card {
     align-items: flex-start;
     padding: 0 2rem;
 }
-.text-single h2{
+
+.text-single h2 {
     font-size: 2rem;
 }
-.text-single .company{
+
+.text-single .company {
     color: var(--grey-dark);
 }
-.text-single .price-single{
+
+.text-single .price-single {
     font-size: 1.4rem;
-   
+
     color: var(--black);
 }
-.text-single .lorem-single{
+
+.text-single .lorem-single {
     font-size: 1.2rem;
     line-height: 2rem;
     color: var(--black);
     opacity: 0.6;
 }
-.text-single .color{
+
+.text-single .color {
     cursor: pointer;
 }
-.text-single button{
-   
-    
+
+.text-single button {
     background: var(--orange);
     color: var(--white);
     border: none;
@@ -410,133 +423,158 @@ main .grid .card {
     cursor: pointer;
     transition: 0.3s;
 }
+
 @media screen and (max-width: 1000px) {
-    html{
+    html {
         font-size: 62.5%;
     }
-    .grid{
+
+    .grid {
         grid-template-columns: repeat(2, 1fr);
-        
     }
+
     .nav-logo img {
         width: 70%;
     }
+
     .nav-logo {
-        
+
         transform: translate(10%, -50%);
     }
-    .single-product{
+
+    .single-product {
         flex-direction: column;
     }
+
     .img-single {
         width: 100%;
         height: 100%;
     }
-    .text-single{
+
+    .text-single {
         width: 100%;
         height: 200px;
         padding: 0;
-    } 
+    }
 }
+
 @media screen and (max-width: 600px) {
-    html{
+    html {
         font-size: 50%;
     }
+
     .nav-logo {
-        
+
         transform: translate(0, -50%);
     }
+
     .nav-logo img {
         width: 50%;
     }
-    .grid{
+
+    .grid {
         grid-template-columns: repeat(1, 1fr);
-        
-    } 
-    .grid .card  {
+    }
+
+    .grid .card {
         height: 100%;
     }
+
     .grid .card .img {
         height: 100%;
-       
     }
-    .grid .card .img img{
+
+    .grid .card .img img {
         background-position: bottom center;
-        
-    } 
-    .cart i{
+    }
+
+    .cart i {
         font-size: 1.5rem;
     }
-    .cart span{
+
+    .cart span {
         width: 15px;
         height: 15px;
     }
-    .wrapper{
+
+    .wrapper {
         flex-direction: column;
     }
-    aside{
+
+    aside {
         width: 100%;
         height: 100%;
-       
     }
-    aside ul{
+
+    aside ul {
         flex-direction: row;
         height: 100%;
-       
     }
-    aside ul li{
+
+    aside ul li {
         font-size: 2rem;
+    }
+
+    aside .range {
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
 }
-aside .range{
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 2rem;
-    margin-top: 1rem;
-}
-}
+
 @media screen and (max-width: 450px) {
-    html{
+    html {
         font-size: 40%;
     }
-    header{
+
+    header {
         height: 100%;
         padding: 2rem;
     }
-    nav{
+
+    nav {
         padding-right: 5rem;
     }
+
     .nav-logo {
-        
+
         transform: translate(10%, -50%);
     }
+
     .nav-logo img {
         width: 40%;
     }
-    .grid{
+
+    .grid {
         grid-template-columns: repeat(1, 1fr);
-        
-    } 
-    .grid .card  {
+    }
+
+    .grid .card {
         height: 100%;
     }
+
     .grid .card .img {
         height: 100%;
-      
     }
-    .grid .card .img img{
+
+    .grid .card .img img {
         background-position: bottom center;
-        
-    } 
-    .cart i{
+    }
+
+    .cart i {
         font-size: 1.5rem;
     }
-    .cart span{
+
+    .cart span {
         right: -2rem;
     }
-    main{
+
+    main {
         padding: 0 2rem;
     }
-    .history{
+
+    .history {
         padding: 0 2rem;
     }
 }

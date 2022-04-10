@@ -57,7 +57,6 @@ nav {
     color: var(--white);
     z-index: 5;
     position: relative;
-
 }
 
 .nav-links a {
@@ -114,13 +113,11 @@ nav {
 }
 
 .h1 h1 {
-
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--white);
     letter-spacing: 1px;
-
 }
 
 .desq h3 {
@@ -135,7 +132,6 @@ header .btn {
     width: 16rem;
     height: 3.375rem;
     border: 1px solid var(--white);
-
     border-radius: 5px;
     z-index: 5;
     margin-top: 2rem;
@@ -184,21 +180,18 @@ main .grid .card {
     height: 290px;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
-
-
 }
 
 .grid .card .img {
     width: 100%;
     height: 208px;
     cursor: pointer;
-    
 }
 
-.title,.price {
-    
+.title,
+.price {
     width: 100%;
     height: 41px;
     display: flex;
@@ -206,22 +199,24 @@ main .grid .card {
     align-items: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    
 }
-.price{
+
+.price {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--black);
 }
-footer{
+
+footer {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 4rem 0;
 }
-.all{
-    width:176px ;
+
+.all {
+    width: 176px;
     height: 40px;
     background: var(--orange);
     border-radius: 5px;
@@ -230,33 +225,36 @@ footer{
     align-items: center;
     margin-bottom: 1rem;
 }
-.all a{
+
+.all a {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
     color: var(--white);
     text-decoration: none;
 }
 
-
-.single-product{
+.single-product {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding:0 6rem;
+    padding: 0 6rem;
     margin-bottom: 2rem;
 }
+
 .img-single {
     width: 50%;
     height: 400px;
 }
-.img-single img{
+
+.img-single img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.text-single{
+
+.text-single {
     width: 50%;
     height: 400px;
     display: flex;
@@ -265,27 +263,32 @@ footer{
     align-items: flex-start;
     padding: 0 2rem;
 }
-.text-single h2{
+
+.text-single h2 {
     font-size: 2rem;
 }
-.text-single .company{
+
+.text-single .company {
     color: var(--grey-dark);
 }
-.text-single .price-single{
+
+.text-single .price-single {
     font-size: 1.4rem;
-   
     color: var(--black);
 }
-.text-single .lorem-single{
+
+.text-single .lorem-single {
     font-size: 1.2rem;
     line-height: 2rem;
     color: var(--black);
     opacity: 0.6;
 }
-.text-single .color{
+
+.text-single .color {
     cursor: pointer;
 }
-.text-single button{
+
+.text-single button {
     background: var(--orange);
     color: var(--white);
     border: none;
@@ -296,96 +299,113 @@ footer{
     cursor: pointer;
     transition: 0.3s;
 }
+
 @media screen and (max-width: 1000px) {
-    html{
+    html {
         font-size: 62.5%;
     }
-    .grid{
+
+    .grid {
         grid-template-columns: repeat(2, 1fr);
-        
+
     }
+
     .nav-logo img {
         width: 70%;
     }
+
     .nav-logo {
-        
         transform: translate(10%, -50%);
     }
-    
 }
+
 @media screen and (max-width: 600px) {
-    html{
+    html {
         font-size: 50%;
     }
+
     .nav-logo {
-        
+
         transform: translate(0, -50%);
     }
+
     .nav-logo img {
         width: 50%;
     }
-    .grid{
+
+    .grid {
         grid-template-columns: repeat(1, 1fr);
-        
-    } 
-    .grid .card  {
+    }
+
+    .grid .card {
         height: 100%;
     }
+
     .grid .card .img {
         height: 100%;
     }
-    .grid .card .img img{
+
+    .grid .card .img img {
         background-position: bottom center;
-        
-    } 
-    .cart i{
+    }
+
+    .cart i {
         font-size: 1.5rem;
     }
-    .cart span{
+
+    .cart span {
         width: 15px;
         height: 15px;
     }
 }
+
 @media screen and (max-width: 450px) {
-    html{
+    html {
         font-size: 40%;
     }
-    header{
+
+    header {
         height: 100%;
         padding: 2rem;
     }
-    nav{
+
+    nav {
         padding-right: 5rem;
     }
+
     .nav-logo {
-        
         transform: translate(10%, -50%);
     }
+
     .nav-logo img {
         width: 40%;
     }
-    .grid{
+
+    .grid {
         grid-template-columns: repeat(1, 1fr);
-        
-    } 
-    .grid .card  {
+    }
+
+    .grid .card {
         height: 100%;
     }
+
     .grid .card .img {
         height: 100%;
-      
     }
-    .grid .card .img img{
+
+    .grid .card .img img {
         background-position: bottom center;
-        
-    } 
-    .cart i{
+    }
+
+    .cart i {
         font-size: 1.5rem;
     }
-    .cart span{
+
+    .cart span {
         right: -2rem;
     }
-    main{
+
+    main {
         padding: 0 2rem;
     }
 }
